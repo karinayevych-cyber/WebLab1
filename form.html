@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма</title>
+</head>
+<body>
+    <h1>Основи мови HTML</h1>
+    <h2>Лабораторна робота №1</h2>
+    <h3>Виконала: Євич Каріна Романівна, група АнД-31</h3>
+    <h4>Варіант №7</h4>
+    <a href="index.html">На головну сторінку</a>
+    <hr>
+
+    <h3>Завдання</h3>
+    <p>Необхідно розробити форму для введення інформації про виставу. Дані повинні бути згруповані.</p>
+    <br>
+
+    <form action="" method="post">
+        <fieldset>
+            <legend><b>Дані про виставу</b></legend>
+            <label>Назва вистави: <input type="text" name="title"></label><br><br>
+            
+            <label>Жанр: 
+                <select name="genre">
+                    <option value="comedy">Комедія</option>
+                    <option value="drama">Драма</option>
+                    <option value="tragedy">Трагедія</option>
+                    <option value="musical">Мюзикл</option>
+                    <option value="opera">Опера</option>
+                    <option value="ballet">Балет</option>
+                </select>
+            </label><br><br>
+
+            <label>Дата вистави: <input type="date" name="show-date"></label><br><br>
+            
+            <label>Час вистави: <input type="time" name="show-time"></label><br><br>
+            
+            <label>Опис вистави:<br>
+                <textarea name="description" rows="5" cols="40"></textarea>
+            </label><br><br>
+            
+            <label>Картинка з афішою: <input type="file" name="poster"></label>
+        </fieldset>
+        
+        <br>
+
+        <fieldset>
+            <legend><b>Дані про квиток</b></legend>
+            <label>Тип розміщення: 
+                <select name="seat-type">
+                    <option value="parterre">Партер</option>
+                    <option value="loge">Ложа бенуар</option>
+                    <option value="amphitheatre">Амфітеатр</option>
+                    <option value="balcony">Балкон</option>
+                </select>
+            </label><br><br>
+            
+            <label>Номер місця: <input type="number" name="seat-number"></label><br><br>
+            
+            <label>Вартість квитка (грн): <input type="number" name="price"></label>
+        </fieldset>
+
+        <br>
+        <button type="submit">Відправити</button>
+    </form>
+</body>
+</html>
